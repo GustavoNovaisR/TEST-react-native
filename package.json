@@ -7,7 +7,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest",
-    "test:up-snap":"jest -u"
+    "test:up-snap": "jest -u",
+    "tnow": "npx jest testandoConteudo.test.node.tsx "
   },
   "jest": {
     "preset": "jest-expo/universal"
@@ -28,6 +29,8 @@
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
     "@types/react-test-renderer": "^17.0.1",
+    "axios": "^0.21.1",
+    "jest-cli": "^25.5.4",
     "jest-expo": "^40.0.2",
     "react-native-testing-library": "^6.0.0",
     "react-test-renderer": "^16.11.0",

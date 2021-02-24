@@ -1,14 +1,24 @@
 import React from "react";
-
 import { StyleSheet, Text, View } from "react-native";
-const Component = () => {
-  return <Text style={styles.fonte}>Sejam Bem vindos !</Text>;
+
+type Props = {
+  value: string;
+};
+const MeuComponente: React.FC<Props> = (props) => {
+  return (
+    <View style={styles.view} testID='embrulho'>
+      <Text style={styles.fonte}>Cante {props.value} com a gente!</Text>
+    </View>
+  );
 };
 const styles = StyleSheet.create({
   fonte: {
     fontSize: 50,
-    color: "#FFF",
+    color: "#fff",
     textAlign: "center",
   },
+  view: {
+    flex: 1,
+  },
 });
-export default Component;
+export default MeuComponente;

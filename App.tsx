@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import Component from "./src/Component";
+import MeuComponente from "./src/Component";
 
 export default function App() {
   return (
@@ -9,7 +9,6 @@ export default function App() {
       <Text style={styles.font}>
         Open up App.tsx to start working on your app!
       </Text>
-      <Component/>
       <StatusBar style="auto" />
     </View>
   );
